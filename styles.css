@@ -20,3 +20,33 @@ body {
     align-items: center;
 }
 
+.btn {
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--blue);
+    border: none;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+h2, p {
+    margin: 0;
+}
+
+/* ToDo Container */
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 2rem;
+    background: var(--white);
+    padding: 3rem;
+    width: 50%;
+    height: 60%;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+    max-width: 30rem;
+}
