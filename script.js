@@ -10,8 +10,25 @@ const addButton = document.querySelector(".btn");
 // Initialize
 document.addEventListener("DOMContentLoaded", () => {
     addButton.addEventListener("click", addTask);
+    todoInput.addEventListener("keydown", (event) =>  {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            addTask();
+        }
+    });
+    deleteButton.addEventListener("click", deleteAllTasks) {
+    };
+    displayTasks();
 });
 
 function addTask() {
 
-};
+}
+
+function deleteAllTasks() {
+
+}
+
+function displayTasks() {
+    
+}
