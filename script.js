@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             addTask();
         }
     });
-    deleteButton.addEventListener("click", deleteAllTasks) {
-    };
+    deleteButton.addEventListener("click", deleteAllTasks);
     displayTasks();
 });
 
@@ -43,5 +42,5 @@ function displayTasks() {
 }
 
 function saveToLocalStorage() {
-    
+    localStorage.setItem("todo", JSON.stringify(todo));
 }
