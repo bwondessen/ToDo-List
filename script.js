@@ -22,7 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function addTask() {
-
+    const newTask = todoInput.value.trim(); 
+    if (newTask !== "") {
+        todo.push({ 
+            text: newTask, 
+            disabled: false 
+        });
+        saveToLocalStorage();
+        todoInput.value = "";
+        displayTasks();
+    }
 }
 
 function deleteAllTasks() {
@@ -30,5 +39,9 @@ function deleteAllTasks() {
 }
 
 function displayTasks() {
+
+}
+
+function saveToLocalStorage() {
     
 }
