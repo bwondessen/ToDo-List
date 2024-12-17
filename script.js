@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function addTask() {
     const newTask = todoInput.value.trim();
     if (newTask !== "") {
-        todo.push({ text: newTask, disabled: false });
+        todo.unshift({ text: newTask, disabled: false });
         saveToLocalStorage();
         todoInput.value = "";
         displayTasks();
