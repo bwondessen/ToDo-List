@@ -1,10 +1,12 @@
 :root {
-    --gradient: linear-gradient(180deg, rgba(45, 112, 1253, 0.73) 0%, #163e92 100%);
+    --gradient: linear-gradient(180deg,
+            rgba(45, 112, 1253, 0.73) 0%,
+            #163e92 100%);
     --dark: #001747;
-    --gray: #b1bacb;
-    --gray-border: rgba(210, 210, 210, 0.75);
-    --gray-light: #eeeeee; 
-    --gray-dark: #405175;
+    --grey: #b1bacb;
+    --grey-border: rgba(210, 210, 210, 0.75);
+    --grey-light: #eeeeee;
+    --grey-dark: $405175;
     --blue: #2d70fd;
     --green: #00d8a7;
     --white: #ffffff;
@@ -32,26 +34,32 @@ body {
     bottom: 0.5rem;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
-/* ToDo Container */
+/* Todo Container */
 
 .todo {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-radius: 2rem;
     background: var(--white);
     padding: 3rem;
-    width: 50%;
-    height: 60%;
+    height: 50%;
+    width: 60%;
     box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
     max-width: 30rem;
 }
 
-h1 {
+h2 {
     text-transform: uppercase;
     height: 3rem;
     color: var(--dark);
@@ -72,7 +80,7 @@ h1 {
 }
 
 input[type="text"]::placeholder {
-    color: var(--gray);
+    color: var(--grey);
 }
 
 .todo-container {
@@ -93,7 +101,14 @@ li {
     padding: 1.3rem;
 }
 
-#todo-list p {
+#todoList p {
+    display: flex;
+    gap: 1rem;
+    color: var(--dark);
+    align-items: center;
+}
+
+#todoList .disabled {
     color: #8f98a8;
 }
 
@@ -102,7 +117,26 @@ li {
     text-decoration: line-through;
 }
 
-input[type="checkbox"]::before::after {
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "\2713";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border: 0.06rem solid var(--grey-border);
+    border-radius: 50%;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
     color: var(--white);
     background-color: var(--green);
     border: 0.06rem solid var(--green);
@@ -110,14 +144,14 @@ input[type="checkbox"]::before::after {
 }
 
 .counter {
-    border: 0.06rem solid var(--gray-light);
+    border: 0.06rem solid var(--grey-light);
 }
 
 .counter-container {
     height: 2rem;
     display: flex;
     justify-content: space-between;
-    color: var(--gray); 
+    color: var(--grey);
 }
 
 .counter-container p {
@@ -127,7 +161,7 @@ input[type="checkbox"]::before::after {
 .counter-container button {
     border: none;
     background-color: transparent;
-    color: var(--gray);
+    color: var(--grey);
     font-size: 1rem;
 }
 
