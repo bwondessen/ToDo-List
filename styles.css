@@ -101,14 +101,14 @@ li {
     padding: 1.3rem;
 }
 
-#todoList p {
+#todo-list p {
     display: flex;
     gap: 1rem;
     color: var(--dark);
     align-items: center;
 }
 
-#todoList .disabled {
+#todo-list .disabled {
     color: #8f98a8;
 }
 
