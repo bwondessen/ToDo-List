@@ -14,5 +14,5 @@ Stay organized by adding tasks and checking them off once completed. The app cou
 ## Technologies
 * HTML
 * CSS
-* Javascript
+* JavaScript
 
