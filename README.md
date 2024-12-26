@@ -1,7 +1,8 @@
 # ToDo List
 A ToDo list app for keeping track of your tasks!
 
-<img width="1512" alt="ToDoListSS" src="https://github.com/user-attachments/assets/3a8ccbea-3626-4da0-871b-477fdc58f8bd" />
+![ToDoListREADME](https://github.com/user-attachments/assets/3ba42f3b-57ea-4279-8de5-99cd79193801)
+
 
 ## Overview
 Stay organized by adding tasks and checking them off once completed. The app counts the total of tasks and gives you the option of deleting all tasks.
